@@ -24,10 +24,20 @@
       margin-top: 20px;
       margin-bottom: 20px;
   }
-  article p{
+  article p
+  {
       color: #FFFEDF;
       padding: 10px;
   }
+  article .card
+    {
+    background-color: #2A2C31;
+    }
+    article h4
+    {
+    color: #DFBA69;
+    }
+   
   .barra-lateral{
       background-color:#2A2C31 ;
   }
@@ -66,7 +76,7 @@
       max-height: 200px;
   }
   .card p{
-      color: black;
+    color: #FFFEDF;
   }
   .card{
       margin-bottom: 20px;
