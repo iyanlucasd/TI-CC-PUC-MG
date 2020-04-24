@@ -28,3 +28,44 @@ yang out.
 commit - a79714f5be3052a77f2780d5e5330fc59a155729 - Update teste Iyan-Trindade
 
 Construção do wireframe, call pra decidir como vai ser o layout do site (https://wireframe.cc/nSmVua), começo das extruturas basicas como nav, header e footer.
+-------------------------------------------------
+    09/04 -- 16:58 -yang/trindade
+
+--BRANCH FLOAT--
+
+commit - 0f95d853e5861addf09670d179407054132c0eca - Main body
+
+Passando o comando pro trindade fazer os cards, pagina com a paleta feita, cores e wireframe pronto.
+------------------------------------------------
+    09/04 -- 16:58 -yang/trindade/tucas
+
+--BRANCH FLOAT--
+
+commit - 5c95a67e0a9a9d6e2388c387448ea55792a74631 - Merge request
+
+Tucano entrou. Pull origin/pc tucas
+----------------------------------------------
+    09/04 -- 17:02 -yang/trindade/tucas
+
+--BRANCH FLOAT--
+
+commit - 9bffb699be259a8d3dfa15cb2fc5b5855e3ac6c1 - Index.html
+
+Cards added
+----------------------------------------------
+    09/04 -- 17:02 -yang/trindade/tucas
+
+--BRANCH FLOAT--
+
+commit - 2d43c824b6d185158602535862a21f4a8c85f2e1 - styles.css
+
+Css modificado
+----------------------------------------------
+    09/04 -- 17:21 -yang/trindade/tucas
+
+--BRANCH FLOAT--
+
+commit - 2d43c824b6d185158602535862a21f4a8c85f2e1 - FIX no trindade
+
+index e styles arrumados e cards prontos *FALTA ARRUMAR O ESPAÇAMENTO DOS CARDS*
+----------------------------------------------

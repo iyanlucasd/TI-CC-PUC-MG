@@ -26,6 +26,7 @@
   }
   article p{
       color: #FFFEDF;
+      padding: 10px;
   }
   .barra-lateral{
       background-color:#2A2C31 ;
@@ -55,6 +56,9 @@
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+    }
+    .carroceu{
+        margin-bottom: 20px;
     }
   /* fim carroceu 1 */
   
