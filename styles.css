@@ -1,3 +1,37 @@
+/* começo bootstrap */
 .selector-for-some-widget {
-    box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* fim bootstrap */
+/* começo body */
+.page{
+    background-color: rgb(44, 44, 44);
+}
+.header-up{
+    background-color: orange;
+}
+footer{
+    background-color: orange;
+}
+/* fim body */
+/* começo carroceu 1 */
+/* CARROCEL 1 */
+.carousel-item {
+
+    min-height: 350px;
+    min-width: 100%;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
+/* fim carroceu 1 */
+
+/* começo media queries */
+@media (max-width: 768px) {
+  .header-up {
+    display: none;
+  }
+}
+/* fim media queries */
