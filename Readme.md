@@ -25,6 +25,6 @@ yang out.
 
 --BRANCH FLOAT--
 
-commit - Update teste Iyan-Trindade
+commit - a79714f5be3052a77f2780d5e5330fc59a155729 - Update teste Iyan-Trindade
 
 Construção do wireframe, call pra decidir como vai ser o layout do site (https://wireframe.cc/nSmVua), começo das extruturas basicas como nav, header e footer.
