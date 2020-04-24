@@ -21,3 +21,10 @@ não esquece de coloca isso daqui ó
 
 yang out.
 ----------------------------------------------------
+    09/04 -- 10:08 -yang/trindade
+
+--BRANCH FLOAT--
+
+commit - a79714f5be3052a77f2780d5e5330fc59a155729 - Update teste Iyan-Trindade
+
+Construção do wireframe, call pra decidir como vai ser o layout do site (https://wireframe.cc/nSmVua), começo das extruturas basicas como nav, header e footer.
