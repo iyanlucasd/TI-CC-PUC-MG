@@ -65,7 +65,7 @@ Css modificado
 
 --BRANCH FLOAT--
 
-commit - 2d43c824b6d185158602535862a21f4a8c85f2e1 - FIX no trindade
+commit - aed436faa8fab95a90d938e7898f7540421d8a3a - FIX no trindade
 
 index e styles arrumados e cards prontos *FALTA ARRUMAR O ESPAÇAMENTO DOS CARDS*
 ----------------------------------------------

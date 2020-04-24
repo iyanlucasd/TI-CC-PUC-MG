@@ -61,6 +61,18 @@
         margin-bottom: 20px;
     }
   /* fim carroceu 1 */
+  /* CARDS */
+  .card img{
+      max-height: 200px;
+  }
+  .card p{
+      color: black;
+  }
+  .card{
+      margin-bottom: 20px;
+      margin-top: 10px;
+  }
+  /* FIM CARDS */
   
   /* começo media queries */
   @media (max-width: 768px) {
