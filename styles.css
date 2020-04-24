@@ -1,64 +1,67 @@
 /* começo bootstrap */
 .selector-for-some-widget {
-  box-sizing: content-box;
-}
-/* fim bootstrap */
-/* começo body */
-.page{
-    background-color: #3E4147;
-}
-.header-up{
-    background-color: #5A2E2E;
-}
-
-.header-up h1{
-    color: #FFFEDF;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-/* fim body */
-/* ARTICLE */
-article{
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-article p{
-    color: #FFFEDF;
-}
-.barra-lateral{
-    background-color:#2A2C31 ;
-}
-/* FIM ARTICLE */
-/* FOOTER */
-footer{
-    background-color: #2A2C31;
-}
-footer h3{
-    color: #DFBA69;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-footer p{
-    color: #FFFEDF;
-}
-/* FIM FOOTER */
-/* começo carroceu 1 */
-/* CARROCEL 1 */
-.carousel-item {
-
-    min-height: 350px;
-    min-width: 100%;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    box-sizing: content-box;
   }
-/* fim carroceu 1 */
-
-/* começo media queries */
-@media (max-width: 768px) {
-  .header-up {
-    display: none;
+  /* fim bootstrap */
+  /* começo body */
+  .page{
+      background-color: #3E4147;
   }
-}
-/* fim media queries */
+  .header-up{
+      background-color: #5A2E2E;
+  }
+  
+  .header-up h1{
+      color: #FFFEDF;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  .pagination>li>a 
+  { border-radius: 50% !important;margin: 0 5px;}
+
+  /* fim body */
+  /* ARTICLE */
+  article{
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  article p{
+      color: #FFFEDF;
+  }
+  .barra-lateral{
+      background-color:#2A2C31 ;
+  }
+  /* FIM ARTICLE */
+  /* FOOTER */
+  footer{
+      background-color: #2A2C31;
+  }
+  footer h3{
+      color: #DFBA69;
+      margin-top: 20px;
+      margin-bottom: 10px;
+  }
+  footer p{
+      color: #FFFEDF;
+  }
+  /* FIM FOOTER */
+  /* começo carroceu 1 */
+  /* CARROCEL 1 */
+  .carousel-item {
+  
+      min-height: 350px;
+      min-width: 100%;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  /* fim carroceu 1 */
+  
+  /* começo media queries */
+  @media (max-width: 768px) {
+    .header-up {
+      display: none;
+    }
+  }
+  /* fim media queries */
