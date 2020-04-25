@@ -24,20 +24,7 @@
       margin-top: 20px;
       margin-bottom: 20px;
   }
-  article p
-  {
-      color: #FFFEDF;
-      padding: 10px;
-  }
-  article .card
-    {
-    background-color: #2A2C31;
-    }
-    article h4
-    {
-    color: #DFBA69;
-    }
-   
+
   .barra-lateral{
       background-color:#2A2C31 ;
   }
@@ -82,8 +69,34 @@
       margin-bottom: 20px;
       margin-top: 10px;
   }
+  article p
+  {
+      color: #FFFEDF;
+      padding: 10px;
+  }
+  article .card
+    {
+    background-color: #2A2C31;
+    }
+    article h4
+    {
+    color: #DFBA69;
+    }
+   
   /* FIM CARDS */
-  
+  /* COLAPSE */
+  .card-body{
+      color: #FFFEDF;
+  }
+  .card-body li{
+      color: #DFBA69;
+      margin-bottom: 10px;
+  }
+  .card-header > h5 > button{
+      color: rgb(209, 59, 59);
+      text-decoration: none;
+  }
+  /* FIM COLAPSE */
   /* começo media queries */
   @media (max-width: 768px) {
     .header-up {
