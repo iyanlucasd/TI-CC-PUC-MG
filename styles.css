@@ -30,17 +30,23 @@
   }
   /* FIM ARTICLE */
   /* FOOTER */
-  footer{
-      background-color: #2A2C31;
+  footer {
+    background-color: #2a2c31;
   }
-  footer h3{
-      color: #DFBA69;
-      margin-top: 20px;
-      margin-bottom: 10px;
+  footer h3 {
+    color: #dfba69;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
-  footer p{
-      color: #FFFEDF;
+  footer p {
+    color: #fffedf;
+    text-align: center;
   }
+  .copyright p{
+    color: #535353;
+  font-size: small;
+  }
+  
   /* FIM FOOTER */
   /* começo carroceu 1 */
   /* CARROCEL 1 */

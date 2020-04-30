@@ -103,7 +103,13 @@
   }
   footer p {
     color: #fffedf;
+    text-align: center;
   }
+  .copyright p{
+    color: #535353;
+  font-size: small;
+  }
+  
   /* FIM FOOTER */
   /* começo carroceu 1 */
   /* CARROCEL 1 */

@@ -43,7 +43,34 @@ hr {
   border-style: inset;
   border-width: 1px;
 }
-
+.comparacao-cards h1{
+  color: #dfba69;
+  background-color: #5a2e2e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.caracteristicas{
+  color: #dfba69;
+  background-color: #5a2e2e;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.caracteristicas h2{
+  color: #dfba69;
+  background-color: #2a2c31;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.205), 0 6px 20px 0 rgba(0, 0, 0, 0.225);
+  text-align: center;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.quick-links h3{
+  text-align: center;
+}
 /* fim body */
 /* ARTICLE */
 article {
@@ -66,7 +93,13 @@ footer h3 {
 }
 footer p {
   color: #fffedf;
+  text-align: center;
 }
+.copyright p{
+  color: #535353;
+font-size: small;
+}
+
 /* FIM FOOTER */
 /* começo carroceu 1 */
 /* CARROCEL 1 */
