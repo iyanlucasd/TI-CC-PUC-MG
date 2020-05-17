@@ -9,6 +9,7 @@
 }
 .header-up {
   background-color: #5a2e2e;
+  padding: 15px;
 }
 
 .header-up h1 {
@@ -65,13 +66,14 @@ footer p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.55);
 }
 .logo-footer h2 {
-  text-align: left;
+  text-align: center;
   margin-top: 30px;
+  margin-left: 30px;
   padding: 5px;
   color: #dfba69;
 }
 .logo-footer p {
-  text-align: left;
+  text-align: center;
   margin-top: 30px;
   padding: 5px;
 }
@@ -79,14 +81,44 @@ footer p {
   margin-left: 20px;
   color: #dfba69;
 }
-hr {
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
+.mapa img {
+  max-width: 100%;
+  margin: inherit;
+  margin-bottom: 20px;
+}
+.quick-links hr{
+  display: none;
+}
+.logo-footer {
+  margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  .header-up {
+    display: none;
+  }
+  .carroceu {
+    display: none;
+  }
+  .linha hr {
+ display: none;
+  }
+  .conteudo {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 1023px) {
+  .header-up {
+    display: none;
+  }
+  .carroceu {
+    display: none;
+  }
+  .linha hr {
+ display: none;
+  }
+  .conteudo {
+    margin-right: 0px;
+  }
 }
 /* FIM FOOTER */
 /* começo carroceu 1 */

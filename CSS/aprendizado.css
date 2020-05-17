@@ -4,11 +4,15 @@
 }
 /* fim bootstrap */
 /* começo body */
+.conteudo {
+  margin-right: 10px;
+}
 .page {
   background-color: #3e4147;
 }
 .header-up {
   background-color: #5a2e2e;
+  padding: 15px;
 }
 
 .header-up h1 {
@@ -32,6 +36,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%;
+  
 }
 hr {
   display: block;
@@ -118,8 +124,9 @@ footer p {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.55);
 }
 .logo-footer h2 {
-  text-align: left;
+  text-align: center;
   margin-top: 30px;
+  margin-left: 30px;
   padding: 5px;
   color: #dfba69;
 }
@@ -127,11 +134,18 @@ footer p {
   text-align: left;
   margin-top: 30px;
   padding: 5px;
-  margin-bottom: 40px;
 }
 .icones span {
   margin-left: 20px;
   color: #dfba69;
+}
+.mapa img {
+  max-width: 100%;
+  margin: inherit;
+  margin-bottom: 20px;
+}
+.quick-links hr{
+  display: none;
 }
 
 /* FIM FOOTER */
@@ -190,6 +204,29 @@ article h4 {
 @media (max-width: 768px) {
   .header-up {
     display: none;
+  }
+  .carroceu {
+    display: none;
+  }
+  .linha hr {
+ display: none;
+  }
+  .conteudo {
+    margin-right: 0px;
+  }
+}
+@media (max-width: 1023px) {
+  .header-up {
+    display: none;
+  }
+  .carroceu {
+    display: none;
+  }
+  .linha hr {
+ display: none;
+  }
+  .conteudo {
+    margin-right: 0px;
   }
 }
 /* fim media queries */
