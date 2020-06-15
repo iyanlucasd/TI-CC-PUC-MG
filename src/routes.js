@@ -5,6 +5,7 @@ const googleTokenStrategy = require("passport-google-plus-token");
 const fs = require("fs");
 const readline = require("readline");
 const { google } = require("googleapis");
+const usuario = require("../src/models/usuario.js");
 
 //metodos: get, post, put, delete
 //TIPOS DE PARAMETROS:
@@ -23,10 +24,13 @@ routes.get("/users/:id", (request, response) => {
   return response.json({ message: "Hello TI" });
 });
 
-routes.post("/usuario/:id", (request, response) => {
-  const { google_username } = request.body;
-
-  return response.json({ message: "Hello TI" });
+routes.post("/register", async (req, res) => {
+  try {
+    const user = await User.create(req.body);
+    return res.json({ user });
+  } catch (err) {
+    return res.status(400).send({ error: "registration failed" });
+  }
 });
-
+module.exports = (app) => app.use("/auth", routes);
 module.exports = routes;
