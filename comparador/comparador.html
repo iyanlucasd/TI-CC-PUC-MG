@@ -6,7 +6,7 @@
     <meta http-equiv=”Content-Type” content=”text/html; charset=utf-8″>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="/comparador/comparador.css">
+    <link rel="stylesheet" type="text/css" href="/comparador.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -35,27 +35,31 @@
                     $('#2').hide();
                     $('#3').hide();
                     $('#4').hide();
+                    console.log('cheguei1')
                 }
-                if (valorEscolhido == 'i5-9400F') {
+                else if (valorEscolhido == 'i5-9400F') {
                     // exibindo o valor selecionado em uma tag específica (span#valor)
                     $('#1').hide();
                     $('#2').show();
                     $('#3').hide();
                     $('#4').hide();
+                    console.log('cheguei1')
                 }
-                if (valorEscolhido == 'i9-9900KS') {
+                else if (valorEscolhido == 'i9-9900KS') {
+                    // exibindo o valor selecionado em uma tag específica (span#valor)
+                    $('#1').hide();
+                    $('#2').hide();
+                    $('#3').hide();
+                    $('#4').show();
+                    console.log('cheguei1')
+                }
+                else if (valorEscolhido == 'i3-9350KF') {
                     // exibindo o valor selecionado em uma tag específica (span#valor)
                     $('#1').hide();
                     $('#2').hide();
                     $('#3').show();
                     $('#4').hide();
-                }
-                if (valorEscolhido == 'i3-9350KF') {
-                    // exibindo o valor selecionado em uma tag específica (span#valor)
-                    $('#1').hide();
-                    $('#2').hide();
-                    $('#3').show();
-                    $('#4').hide();
+                    console.log('cheguei1')
                 } 
                 else {
                     // senão, fica em branco
@@ -64,6 +68,7 @@
                     $('#2').hide();
                     $('#3').hide();
                     $('#4').hide();
+                    console.log('chegueiE')
                 }
                 
             });
@@ -72,33 +77,37 @@
                 valorEscolhido2 = $("#pecas2 option:selected").text();
                 console.log(valorEscolhido2);
                 // se o valor selecionado for, então exibe
-                if (valorEscolhido == 'i7-9700k') {
+                if (valorEscolhido2 == 'i7-9700k') {
                     // exibindo o valor selecionado em uma tag específica (span#valor)
                     $('#21').show();
                     $('#22').hide();
                     $('#23').hide();
                     $('#24').hide();
+                    console.log('cheguei2')
                 }
-                if (valorEscolhido == 'i5-9400F') {
+                else if (valorEscolhido2 == 'i5-9400F') {
                     // exibindo o valor selecionado em uma tag específica (span#valor)
                     $('#21').hide();
                     $('#22').show();
                     $('#23').hide();
                     $('#24').hide();
+                    console.log('cheguei2')
                 }
-                if (valorEscolhido == 'i9-9900KS') {
+                else if (valorEscolhido2 == 'i9-9900KS') {
+                    // exibindo o valor selecionado em uma tag específica (span#valor)
+                    $('#21').hide();
+                    $('#22').hide();
+                    $('#23').hide();
+                    $('#24').show();
+                    console.log('cheguei2')
+                }
+                else if (valorEscolhido2 == 'i3-9350KF') {
                     // exibindo o valor selecionado em uma tag específica (span#valor)
                     $('#21').hide();
                     $('#22').hide();
                     $('#23').show();
                     $('#24').hide();
-                }
-                if (valorEscolhido == 'i3-9350KF') {
-                    // exibindo o valor selecionado em uma tag específica (span#valor)
-                    $('#21').hide();
-                    $('#22').hide();
-                    $('#23').show();
-                    $('#24').hide();
+                    console.log('cheguei2')
                 } 
                 else {
                     // senão, fica em branco
@@ -107,6 +116,7 @@
                     $('#22').hide();
                     $('#23').hide();
                     $('#24').hide();
+                    console.log('chegueiE')
                 }
             });
         });
@@ -194,23 +204,25 @@
                         <div class="col-6">
                             <label for="pecas1">Peças</label>
                             <select name="pecas1" id="pecas1">
+                                <option value="5" selected>-</option>
                                 <option value="3">i3-9350KF</option>
                                 <option value="2">i5-9400F</option>
                                 <option value="1">i7-9700k</option>
-                                <option value="4" selected>i9-9900KS</option>
+                                <option value="4" >i9-9900KS</option>
                             </select>
 
                         </div>
                         <div class="col-6">
                             <label for="pecas2">Peças</label>
                             <select name="pecas2" id="pecas2">
+                                <option value="5" selected>-</option>
                                 <option value="3">i3-9350KF</option>
                                 <option value="2">i5-9400F</option>
                                 <option value="1">i7-9700k</option>
-                                <option value="4" selected>i9-9900KS</option>
+                                <option value="4">i9-9900KS</option>
                             </select>
                         </div>
-                        <div class="col-6" id="1">
+                        <div class="col-6" id="1" style="display: none !important;">
                             <div class="especificacoes">
                                 <h1>i7-9700k</h1>
                                 <h2>Thread</h2>
@@ -225,7 +237,7 @@
                                 <p>12 Mb</p>
                             </div>
                         </div>
-                        <div class="col-6" id="2">
+                        <div class="col-6" id="2" style="display: none !important;">
                             <div class="especificacoes">
                                 <h1>i5-9400F</h1>
                                 <h2>Thread</h2>
@@ -240,7 +252,7 @@
                                 <p>9 mb</p>
                             </div>
                         </div>
-                        <div class="col-6" id="3">
+                        <div class="col-6" id="3" style="display: none !important;">
                             <div class="especificacoes">
                                 <h1>i3-9350KF</h1>
                                 <h2>Thread</h2>
@@ -255,7 +267,7 @@
                                 <p>8 mb</p>
                             </div>
                         </div>
-                        <div class="col-6" id="4">
+                        <div class="col-6" id="4" style="display: none !important;">
                             <div class="especificacoes">
                                 <h1>i9-9900KS</h1>
                                 <h2>Thread</h2>
@@ -270,7 +282,7 @@
                                 <p>16 mb</p>
                             </div>
                         </div>
-                        <div class="col-6" id="21">
+                        <div class="col-6" id="21" style="display: none !important;">
                             <div class="especificacoes">
                                 <h1>i7-9700k</h1>
                                 <h2>Thread</h2>
@@ -285,7 +297,7 @@
                                 <p>12 Mb</p>
                             </div>
                         </div>
-                        <div class="col-6" id="22">
+                        <div class="col-6" id="22" style="display: none !important;">
                             <div class="especificacoes">
                                 <h1>i5-9400F</h1>
                                 <h2>Thread</h2>
@@ -300,7 +312,7 @@
                                 <p>9 mb</p>
                             </div>
                         </div>
-                        <div class="col-6" id="23">
+                        <div class="col-6" id="23" style="display: none !important;">
                             <div class="especificacoes">
                                 <h1>i3-9350KF</h1>
                                 <h2>Thread</h2>
@@ -315,7 +327,7 @@
                                 <p>8 mb</p>
                             </div>
                         </div>
-                        <div class="col-6" id="24">
+                        <div class="col-6" id="24" style="display: none !important;">
                             <div class="especificacoes">
                                 <h1>i9-9900KS</h1>
                                 <h2>Thread</h2>
