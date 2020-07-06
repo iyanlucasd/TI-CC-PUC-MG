@@ -22,22 +22,91 @@
         $(document).ready(function () {
             // declaração da variável
             var valorEscolhido;
+            var valorEscolhido2;
 
             $("#pecas1").change(function () {
                 // obtendo o valor selecionado
                 valorEscolhido = $("#pecas1 option:selected").text();
                 console.log(valorEscolhido);
                 // se o valor selecionado for, então exibe
-                if (valorEscolhido == 'i7') {
+                if (valorEscolhido == 'i7-9700k') {
                     // exibindo o valor selecionado em uma tag específica (span#valor)
-                    $('#3').hide();
-                    $('#2').hide();
                     $('#1').show();
-                } else {
-                    // senão, fica em branco
-                    $('#2').show();
+                    $('#2').hide();
+                    $('#3').hide();
+                    $('#4').hide();
+                }
+                if (valorEscolhido == 'i5-9400F') {
+                    // exibindo o valor selecionado em uma tag específica (span#valor)
                     $('#1').hide();
+                    $('#2').show();
+                    $('#3').hide();
+                    $('#4').hide();
+                }
+                if (valorEscolhido == 'i9-9900KS') {
+                    // exibindo o valor selecionado em uma tag específica (span#valor)
+                    $('#1').hide();
+                    $('#2').hide();
+                    $('#3').show();
+                    $('#4').hide();
+                }
+                if (valorEscolhido == 'i3-9350KF') {
+                    // exibindo o valor selecionado em uma tag específica (span#valor)
+                    $('#1').hide();
+                    $('#2').hide();
+                    $('#3').show();
+                    $('#4').hide();
+                } 
+                else {
+                    // senão, fica em branco
 
+                    $('#1').hide();
+                    $('#2').hide();
+                    $('#3').hide();
+                    $('#4').hide();
+                }
+                
+            });
+            $("#pecas2").change(function () {
+                // obtendo o valor selecionado
+                valorEscolhido2 = $("#pecas2 option:selected").text();
+                console.log(valorEscolhido2);
+                // se o valor selecionado for, então exibe
+                if (valorEscolhido == 'i7-9700k') {
+                    // exibindo o valor selecionado em uma tag específica (span#valor)
+                    $('#21').show();
+                    $('#22').hide();
+                    $('#23').hide();
+                    $('#24').hide();
+                }
+                if (valorEscolhido == 'i5-9400F') {
+                    // exibindo o valor selecionado em uma tag específica (span#valor)
+                    $('#21').hide();
+                    $('#22').show();
+                    $('#23').hide();
+                    $('#24').hide();
+                }
+                if (valorEscolhido == 'i9-9900KS') {
+                    // exibindo o valor selecionado em uma tag específica (span#valor)
+                    $('#21').hide();
+                    $('#22').hide();
+                    $('#23').show();
+                    $('#24').hide();
+                }
+                if (valorEscolhido == 'i3-9350KF') {
+                    // exibindo o valor selecionado em uma tag específica (span#valor)
+                    $('#21').hide();
+                    $('#22').hide();
+                    $('#23').show();
+                    $('#24').hide();
+                } 
+                else {
+                    // senão, fica em branco
+
+                    $('#21').hide();
+                    $('#22').hide();
+                    $('#23').hide();
+                    $('#24').hide();
                 }
             });
         });
@@ -125,36 +194,141 @@
                         <div class="col-6">
                             <label for="pecas1">Peças</label>
                             <select name="pecas1" id="pecas1">
-                                <option value=""></option>
-                                <option value="3">i3</option>
-                                <option value="2">i5</option>
-                                <option value="1">i7</option>
+                                <option value="3">i3-9350KF</option>
+                                <option value="2">i5-9400F</option>
+                                <option value="1">i7-9700k</option>
+                                <option value="4" selected>i9-9900KS</option>
                             </select>
 
                         </div>
                         <div class="col-6">
                             <label for="pecas2">Peças</label>
                             <select name="pecas2" id="pecas2">
-                                <option value=""></option>
-                                <option value="3">i3</option>
-                                <option value="2">i5</option>
-                                <option value="1">i7</option>
+                                <option value="3">i3-9350KF</option>
+                                <option value="2">i5-9400F</option>
+                                <option value="1">i7-9700k</option>
+                                <option value="4" selected>i9-9900KS</option>
                             </select>
                         </div>
-                        <!-- <script>
-                            window.onload = () => {
-                                var comboPecas = document.getElementById("pecas1");
-                                if (comboPecas.value = 2) {
-                                    document.getElementById("1").style.display = "none";
-                                }
-                                //onchange
-
-                            }
-                        </script> -->
                         <div class="col-6" id="1">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, saepe sed
-                                    vel omnis officia laboriosam iure totam ducimus, facere cupiditate animi? Quibusdam
-                                    aspernatur nesciunt ducimus minus ratione in, corporis consequatur?</p>
+                            <div class="especificacoes">
+                                <h1>i7-9700k</h1>
+                                <h2>Thread</h2>
+                                <p>8</p>
+                                <h2>Clock</h2>
+                                <p>Até 4.90 GHz</p>
+                                <h2>Soquete</h2>
+                                <p>FCLGA 1151</p>
+                                <h2>TDP</h2>
+                                <p>95 W</p>
+                                <h2>Cache</h2>
+                                <p>12 Mb</p>
+                            </div>
+                        </div>
+                        <div class="col-6" id="2">
+                            <div class="especificacoes">
+                                <h1>i5-9400F</h1>
+                                <h2>Thread</h2>
+                                <p>6</p>
+                                <h2>Clock</h2>
+                                <p>Até 4.10 GHz</p>
+                                <h2>Soquete</h2>
+                                <p>FCLGA 1151</p>
+                                <h2>TDP</h2>
+                                <p>65 W</p>
+                                <h2>Cache</h2>
+                                <p>9 mb</p>
+                            </div>
+                        </div>
+                        <div class="col-6" id="3">
+                            <div class="especificacoes">
+                                <h1>i3-9350KF</h1>
+                                <h2>Thread</h2>
+                                <p>4</p>
+                                <h2>Clock</h2>
+                                <p>Até 4.60 GHz</p>
+                                <h2>Soquete</h2>
+                                <p>FCLGA 1151</p>
+                                <h2>TDP</h2>
+                                <p>91 W</p>
+                                <h2>Cache</h2>
+                                <p>8 mb</p>
+                            </div>
+                        </div>
+                        <div class="col-6" id="4">
+                            <div class="especificacoes">
+                                <h1>i9-9900KS</h1>
+                                <h2>Thread</h2>
+                                <p>16</p>
+                                <h2>Clock</h2>
+                                <p>Até 5.00 GHz</p>
+                                <h2>Soquete</h2>
+                                <p>FCLGA 1151</p>
+                                <h2>TDP</h2>
+                                <p>127 W</p>
+                                <h2>Cache</h2>
+                                <p>16 mb</p>
+                            </div>
+                        </div>
+                        <div class="col-6" id="21">
+                            <div class="especificacoes">
+                                <h1>i7-9700k</h1>
+                                <h2>Thread</h2>
+                                <p>8</p>
+                                <h2>Clock</h2>
+                                <p>Até 4.90 GHz</p>
+                                <h2>Soquete</h2>
+                                <p>FCLGA 1151</p>
+                                <h2>TDP</h2>
+                                <p>95 W</p>
+                                <h2>Cache</h2>
+                                <p>12 Mb</p>
+                            </div>
+                        </div>
+                        <div class="col-6" id="22">
+                            <div class="especificacoes">
+                                <h1>i5-9400F</h1>
+                                <h2>Thread</h2>
+                                <p>6</p>
+                                <h2>Clock</h2>
+                                <p>Até 4.10 GHz</p>
+                                <h2>Soquete</h2>
+                                <p>FCLGA 1151</p>
+                                <h2>TDP</h2>
+                                <p>65 W</p>
+                                <h2>Cache</h2>
+                                <p>9 mb</p>
+                            </div>
+                        </div>
+                        <div class="col-6" id="23">
+                            <div class="especificacoes">
+                                <h1>i3-9350KF</h1>
+                                <h2>Thread</h2>
+                                <p>4</p>
+                                <h2>Clock</h2>
+                                <p>Até 4.60 GHz</p>
+                                <h2>Soquete</h2>
+                                <p>FCLGA 1151</p>
+                                <h2>TDP</h2>
+                                <p>91 W</p>
+                                <h2>Cache</h2>
+                                <p>8 mb</p>
+                            </div>
+                        </div>
+                        <div class="col-6" id="24">
+                            <div class="especificacoes">
+                                <h1>i9-9900KS</h1>
+                                <h2>Thread</h2>
+                                <p>16</p>
+                                <h2>Clock</h2>
+                                <p>Até 5.00 GHz</p>
+                                <h2>Soquete</h2>
+                                <p>FCLGA 1151</p>
+                                <h2>TDP</h2>
+                                <p>127 W</p>
+                                <h2>Cache</h2>
+                                <p>16 mb</p>
+                            </div>
                         </div>
                         <div class="col-12">
                             <div class="conteudo">
